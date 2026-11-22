@@ -1,16 +1,49 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Doha Tools — Doha Pulse</title><meta name="description" content="Simple Doha tools: QAR currency converter and Doha prayer times.">
-<link rel="stylesheet" href="/style.css"></head><body>
-<header><a class="brand" href="/">Doha <span>Pulse</span></a><nav><a href="/news.html">News</a><a href="/guides.html">Guides</a><a href="/directory.html">Directory</a><a href="/tools.html">Tools</a></nav><p class="based">Doha, Qatar</p></header>
-<main><h1>Doha tools</h1>
-<h2>QAR currency converter</h2>
-<p>Rates below are approximate, for quick reference only — check a live rate before paying anything.</p>
-<p><label>Amount in QAR <input id="qar" type="number" value="100" min="0"></label>
-<label>To <select id="cur"><option value="0.274">USD</option><option value="0.237">EUR</option><option value="0.206">GBP</option><option value="24.2">INR</option><option value="77.0">PKR</option></select></label>
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doha Tools — Doha Pulse</title>
+<meta name="description" content="Simple Doha tools: QAR currency converter and Doha prayer times.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%237A1E2B'/%3E%3Ctext x='32' y='44' font-family='Georgia' font-size='36' font-weight='bold' fill='%23C9A86A' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="site"><div class="nav">
+<a class="brand" href="/">Doha <span>Pulse</span></a>
+<nav class="links"><a href="/news.html" class="">News</a><a href="/guides.html" class="">Guides</a><a href="/directory.html" class="">Directory</a><a href="/tools.html" class="active">Tools</a></nav>
+<span class="pill"><i></i>Doha, Qatar</span>
+</div></header>
+<main>
+
+<div class="wrap"><div class="page-hero">
+<span class="eyebrow">Tools</span>
+<h1>Doha tools</h1>
+<p>Small tools for daily life in Doha. Free, no sign-up, nothing leaves your browser.</p>
+</div>
+<div class="tool-grid">
+<div class="tool"><h2>QAR currency converter</h2>
+<p>Rates below are approximate, for quick reference only &mdash; check a live rate before paying anything.</p>
+<label for="qar">Amount in QAR</label>
+<input id="qar" type="number" value="100" min="0">
+<label for="cur">Convert to</label>
+<select id="cur"><option value="0.274">USD &mdash; US Dollar</option><option value="0.237">EUR &mdash; Euro</option><option value="0.206">GBP &mdash; British Pound</option><option value="24.2">INR &mdash; Indian Rupee</option><option value="77.0">PKR &mdash; Pakistani Rupee</option></select>
 <button class="btn" onclick="document.getElementById('out').textContent=(document.getElementById('qar').value*document.getElementById('cur').value).toFixed(2)">Convert</button>
-<span id="out"></span></p>
-<h2>Doha prayer times</h2>
-<p>Today's times change through the year. For accurate times, check the official Qatar prayer timetable for today before you plan around them.</p>
-<ul><li>Fajr — early morning, before sunrise</li><li>Dhuhr — midday</li><li>Asr — afternoon</li><li>Maghrib — sunset</li><li>Isha — night</li></ul>
-<p><a href="/">← Back home</a></p></main>
-<footer><p>Doha Pulse — Doha, Qatar</p></footer></body></html>
+<div class="out" id="out"></div>
+</div>
+<div class="tool"><h2>Doha prayer times</h2>
+<p>Today&rsquo;s times change through the year. For accurate times, check the official Qatar prayer timetable for today before you plan around them.</p>
+<ul class="times"><li><span>Fajr</span><b>Early morning</b></li><li><span>Dhuhr</span><b>Midday</b></li><li><span>Asr</span><b>Afternoon</b></li><li><span>Maghrib</span><b>Sunset</b></li><li><span>Isha</span><b>Night</b></li></ul>
+</div>
+</div>
+<p style="margin-top:22px"><a href="/">&larr; Back home</a></p>
+</div>
+
+</main>
+<footer class="site"><div class="wrap">
+<div class="cols">
+<div><h3>Doha Pulse</h3><p>Qatar&rsquo;s practical guide to choosing, booking and getting things done. News, guides, places and tools for Doha &mdash; simple, local, and built to grow one page at a time.</p></div>
+<div><h3>Explore</h3><ul><li><a href="/news.html">News</a></li><li><a href="/guides.html">Guides</a></li><li><a href="/directory.html">Directory</a></li><li><a href="/tools.html">Tools</a></li></ul></div>
+<div><h3>Contact</h3><ul><li>Email only</li><li>Doha, Qatar</li><li>Listings free for 60 days</li></ul></div>
+</div>
+<div class="fine">Doha Pulse &mdash; Doha, Qatar &middot; Photos: Wikimedia Commons (West Bay skyline, Souq Waqif, Museum of Islamic Art, Katara, Lusail Marina) &middot; No ads. No paid links at launch.</div>
+</div></footer>
+</body></html>
