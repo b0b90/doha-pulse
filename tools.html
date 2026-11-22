@@ -1,0 +1,16 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doha Tools — Doha Pulse</title><meta name="description" content="Simple Doha tools: QAR currency converter and Doha prayer times.">
+<link rel="stylesheet" href="/style.css"></head><body>
+<header><a class="brand" href="/">Doha <span>Pulse</span></a><nav><a href="/news.html">News</a><a href="/guides.html">Guides</a><a href="/directory.html">Directory</a><a href="/tools.html">Tools</a></nav><p class="based">Doha, Qatar</p></header>
+<main><h1>Doha tools</h1>
+<h2>QAR currency converter</h2>
+<p>Rates below are approximate, for quick reference only — check a live rate before paying anything.</p>
+<p><label>Amount in QAR <input id="qar" type="number" value="100" min="0"></label>
+<label>To <select id="cur"><option value="0.274">USD</option><option value="0.237">EUR</option><option value="0.206">GBP</option><option value="24.2">INR</option><option value="77.0">PKR</option></select></label>
+<button class="btn" onclick="document.getElementById('out').textContent=(document.getElementById('qar').value*document.getElementById('cur').value).toFixed(2)">Convert</button>
+<span id="out"></span></p>
+<h2>Doha prayer times</h2>
+<p>Today's times change through the year. For accurate times, check the official Qatar prayer timetable for today before you plan around them.</p>
+<ul><li>Fajr — early morning, before sunrise</li><li>Dhuhr — midday</li><li>Asr — afternoon</li><li>Maghrib — sunset</li><li>Isha — night</li></ul>
+<p><a href="/">← Back home</a></p></main>
+<footer><p>Doha Pulse — Doha, Qatar</p></footer></body></html>
